@@ -1,0 +1,172 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Blank WordPress Pot "
+"v1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"POT-Creation-Date: "
+"2024-09-16 12:24+0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example."
+"com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit "
+"3.2.2\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: templates/content-main.php:2
+msgid ""
+"Video Widget Simple "
+"Settings"
+msgstr ""
+
+#: templates/content-main.php:3
+msgid ""
+"Settings for Video "
+"Widget Simple. Copy URL "
+"of a video to display "
+"from media gallery. Set "
+"parameters."
+msgstr ""
+
+#: templates/content-main.php:14
+msgid "Saved Options"
+msgstr ""
+
+#: templates/content-main.php:16
+msgid "Video: "
+msgstr ""
+
+#: templates/content-main.php:17
+msgid "Page: "
+msgstr ""
+
+#: templates/content-main.php:18
+msgid "Width: "
+msgstr ""
+
+#: templates/content-main.php:19
+msgid "Border: "
+msgstr ""
+
+#: templates/content-main.php:20
+msgid "Delay: "
+msgstr ""
+
+#: templates/content-main.php:23
+msgid ""
+"Example of your video in "
+"active state"
+msgstr ""
+
+#: widget-functions.php:37
+msgid "Choose Video File"
+msgstr ""
+
+#: widget-functions.php:39
+msgid ""
+"Paste URL of video from "
+"media gallery in the "
+"field. Best way to use "
+"portrait oriented "
+"720x1280px .mp4 video."
+msgstr ""
+
+#: widget-functions.php:46
+msgid "Input URL"
+msgstr ""
+
+#: widget-functions.php:59
+msgid "Output Page"
+msgstr ""
+
+#: widget-functions.php:62
+msgid ""
+"1. Leave blank to show "
+"on any page"
+msgstr ""
+
+#: widget-functions.php:63
+msgid ""
+"2. Specify url of your "
+"home page to show on "
+"home page only"
+msgstr ""
+
+#: widget-functions.php:64
+msgid ""
+"3. Specify url of any "
+"specific page of your "
+"site"
+msgstr ""
+
+#: widget-functions.php:75
+msgid "Video Width"
+msgstr ""
+
+#: widget-functions.php:78
+msgid ""
+"Recommended width of "
+"video widget should be "
+"from 220px to 320px"
+msgstr ""
+
+#: widget-functions.php:89
+msgid "Appearing delay, ms"
+msgstr ""
+
+#: widget-functions.php:92
+msgid ""
+"Delay of widget "
+"appearing. Try 2000ms"
+msgstr ""
+
+#: widget-functions.php:103
+msgid "Border color"
+msgstr ""
+
+#: widget-functions.php:106
+msgid ""
+"Border color of widget"
+msgstr ""
+
+#: widget-pages.php:9
+msgid "Video Widget Simple"
+msgstr ""

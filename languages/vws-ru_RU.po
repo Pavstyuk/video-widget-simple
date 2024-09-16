@@ -1,0 +1,131 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blank WordPress Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2024-09-15 23:21+0700\n"
+"PO-Revision-Date: 2024-09-16 05:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:"
+"1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2"
+
+#: widget-functions.php:62
+msgid "1. Leave blank to show on any page"
+msgstr "1. Оставьте пустым, чтобы отобразить на любой странице."
+
+#: widget-functions.php:63
+msgid "2. Specify url of your home page to show on home page only"
+msgstr ""
+"2. Укажите URL-адрес вашей домашней страницы, чтобы отображать виджет только "
+"на домашней странице."
+
+#: widget-functions.php:64
+msgid "3. Specify url of any specific page of your site"
+msgstr "3. Укажите URL любой конкретной страницы вашего сайта"
+
+#: widget-functions.php:89
+msgid "Appearing delay, ms"
+msgstr "Задержка появления, мс"
+
+#: widget-functions.php:103
+msgid "Border color"
+msgstr "Цвет рамки"
+
+#: widget-functions.php:106
+msgid "Border color of widget"
+msgstr "Цвет рамки виджета"
+
+#: templates/content-main.php:19
+msgid "Border: "
+msgstr "Рамка: "
+
+#: widget-functions.php:37
+msgid "Choose Video File"
+msgstr "Выберите видео файл"
+
+#: widget-functions.php:92
+msgid "Delay of widget appearing. Try 2000ms"
+msgstr "Задержка появления виджета. Попробуйте 2000мс"
+
+#: templates/content-main.php:20
+msgid "Delay: "
+msgstr "Задержка: "
+
+#: templates/content-main.php:23
+msgid "Example of your video in active state"
+msgstr "Пример вашего видео в активном состоянии"
+
+#: widget-functions.php:46
+msgid "Input URL"
+msgstr "Вставьте URL фидео файла"
+
+#: widget-functions.php:59
+msgid "Output Page"
+msgstr "Страница вывода"
+
+#: templates/content-main.php:17
+msgid "Page: "
+msgstr "Старница: "
+
+#: widget-functions.php:39
+msgid ""
+"Paste URL of video from media gallery in the field. Best way to use portrait "
+"oriented 720x1280px .mp4 video."
+msgstr ""
+"Вставьте URL видео файла из медиа галлереи. Лучший выриант использовать "
+"видео .mp4 с разрешением 720x1280px."
+
+#: widget-functions.php:78
+msgid "Recommended width of video widget should be from 220px to 320px"
+msgstr "Рекомендуемая ширина видеовиджета должна быть от 220 до 320 пикселей"
+
+#: templates/content-main.php:14
+msgid "Saved Options"
+msgstr "Сохраненные настройки"
+
+#: templates/content-main.php:3
+#| msgid ""
+#| "Settings for Video Widget Simple. Copy URL of a video to display from "
+#| "media gallery."
+msgid ""
+"Settings for Video Widget Simple. Copy URL of a video to display from media "
+"gallery. Set parameters."
+msgstr ""
+"Настройки для Простого Видео Виджета. Скопируйте URL нужного видео файла из "
+"медиа галереи. Установите параметры"
+
+#: widget-pages.php:9
+msgid "Video Widget Simple"
+msgstr "Простой Видео Виджет"
+
+#: templates/content-main.php:2
+msgid "Video Widget Simple Settings"
+msgstr "Простой видео виджет. Настройки"
+
+#: widget-functions.php:75
+msgid "Video Width"
+msgstr "Ширина видео"
+
+#: templates/content-main.php:16
+msgid "Video: "
+msgstr "Видео: "
+
+#: templates/content-main.php:18
+msgid "Width: "
+msgstr "Ширина: "
