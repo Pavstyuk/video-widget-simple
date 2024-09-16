@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const hostName = window.location.origin;
-    const widgetStylesUrl = hostName + "/wp-content/plugins/video-widget/assets/public/vws-front.min.css";
+    const widgetStylesUrl = hostName + "/wp-content/plugins/video-widget-simple/assets/public/vws-front.min.css";
     const linkStyle = `
         <style id="vws-front-css">
             @import url("${widgetStylesUrl}");
         </style>`;
 
-    const getContent = hostName + "/wp-content/plugins/video-widget/widget-get.php?key=vws-video-widget-simple";
+    const getContent = hostName + "/wp-content/plugins/video-widget-simple/widget-get.php?key=vws-video-widget-simple";
 
     let thisPage = window.location.origin + window.location.pathname;
     let thisPage_ = thisPage.slice(0, -1);

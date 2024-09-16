@@ -16,7 +16,7 @@ function vws_scripts_admin($hook_suffix)
 
 function vws_scripts_front()
 {
-    echo "<script defer id='vws-front-js' src='" . get_site_url() . "/wp-content/plugins/video-widget/assets/public/vws-front.min.js?ver=" . VWS_VER . "'></script>";
+    echo "<script defer id='vws-front-js' src='" . get_site_url() . "/wp-content/plugins/video-widget-simple/assets/public/vws-front.min.js?ver=" . VWS_VER . "'></script>";
 }
 
 function vws_load_text_domain()
