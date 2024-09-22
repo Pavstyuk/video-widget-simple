@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Video Widget Simple Plugin
+Plugin Name: Video Widget Simple
 Plugin URI: https://pavstyuk.ru/
 Description: Very Simple plugin to display video widget with presentation of business or any ideas on front page of your WordPress Site.
-Version: 0.0.3
+Version: 0.0.4
 Requires at least: 5.8
 Requires PHP: 5.6.20
 Author: Mikhail Pavstyuk
