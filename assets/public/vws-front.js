@@ -8,9 +8,11 @@ const linkStyle = `
 const getContent = hostName + "/wp-content/plugins/video-widget-simple/widget-get.php?key=vws-video-widget-simple";
 
 let thisPage = window.location.origin + window.location.pathname;
+console.log("thisPage", thisPage);
 let thisPage_ = thisPage.slice(0, -1);
 let thisPath = window.location.pathname;
 let thisPath_ = thisPath.slice(0, -1);
+console.log("thisPath_", thisPath_);
 
 // GET OPTIONS
 fetch(getContent)
@@ -19,22 +21,32 @@ fetch(getContent)
     })
     .then(data => {
         if (data.video.length > 20) {
-            if (thisPage === data.page || thisPage_ === data.page) {
-                buildWidget(data);
+            switch (data.page) {
+                case thisPath:
+                    buildWidget(data);
+                    break;
+                case thisPage:
+                    buildWidget(data);
+                    break;
+                case thisPath_:
+                    buildWidget(data);
+                    break;
+                case thisPage_:
+                    buildWidget(data);
+                    break;
+                case "":
+                    buildWidget(data);
+                    break;
             }
-            if (data.page === "home" || data.page === "main" || data.page === thisPath || data.page === thisPath_) {
-                buildWidget(data);
-            }
-            if (data.page === "") {
-                buildWidget(data);
-            }
+
         }
     })
     .catch(err => {
-        console.err("Error: ", err);
+        console.error("Error: ", err);
     });
 
 // BUILD WIDGET
+
 const buildWidget = (object) => {
     console.log(object);
 
@@ -43,6 +55,7 @@ const buildWidget = (object) => {
 
     const wrapEl = document.createElement("div");
     wrapEl.classList.add("vws-widget-wrap");
+    wrapEl.classList.add("hidden");
     if (object.color) {
         wrapEl.style.borderColor = object.color;
     }
@@ -54,7 +67,7 @@ const buildWidget = (object) => {
     videoEl.muted = true;
     videoEl.loop = true;
     videoEl.controls = false;
-    videoEl.autoplay = true;
+    videoEl.autoplay = false;
 
     const sourceEl = document.createElement("source");
     sourceEl.src = object.video;
@@ -73,18 +86,17 @@ const buildWidget = (object) => {
     wrapEl.append(buttonClose, buttonMin);
 
     document.body.insertAdjacentHTML("beforeend", linkStyle);
-
-    setTimeout(() => {
-        document.body.append(wrapEl);
-        setWidgetEvents();
-    },
-        delay);
-
+    document.body.append(wrapEl);
 
     // SET EVENTS
     const setWidgetEvents = () => {
         let wrap = document.querySelector(".vws-widget-wrap");
         let video = document.querySelector(".vws-widget-video");
+
+        video.addEventListener("canplay", () => {
+            runVideo(video, delay);
+        });
+
         document.documentElement.addEventListener("click", (e) => {
 
             if (e.target.className === "vws-widget-close") {
@@ -126,4 +138,17 @@ const buildWidget = (object) => {
             }
         });
     }
+
+    setWidgetEvents();
+}
+
+const runVideo = (video, delay) => {
+    console.log("Video is ready");
+    let wrapper = video.parentElement;
+    setTimeout(() => {
+        video.autoplay = true;
+        video.play();
+        wrapper.classList.remove("hidden");
+        console.log("Video started");
+    }, delay);
 }

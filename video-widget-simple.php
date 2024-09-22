@@ -3,7 +3,7 @@
 Plugin Name: Video Widget Simple
 Plugin URI: https://github.com/Pavstyuk/video-widget-simple
 Description: Very Simple plugin to display video widget with presentation of business or any ideas on front page of your WordPress Site.
-Version: 0.0.7
+Version: 0.0.12
 Requires at least: 5.8
 Requires PHP: 5.6.20
 Author: Mikhail Pavstyuk
@@ -17,7 +17,7 @@ if (!function_exists('add_action')) {
     die('Nothing to do. Bye.');
 }
 
-define('VWS_VER', '0.0.7');
+define('VWS_VER', '0.0.12');
 define('VWS_DIR', plugin_dir_path(__FILE__));
 
 require_once VWS_DIR . "widget-functions.php";
